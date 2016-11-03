@@ -23,3 +23,17 @@ isValid()
 value()
 valid()
 ```
+
+Top level constants should be all caps underscore case
+```es6
+// GOOD
+const OPEN_ID = 'OPEN_ID';
+
+function isOpen() {
+  const openId = getCurId(); // function level `const`s are treated normally
+  return openId === OPEN_ID;
+}
+
+// BAD
+const openId = 'OPEN_ID';
+```
