@@ -1,5 +1,5 @@
 # ES6 Style Guide
-An opinion on code style for ES6
+An opinion on code style for ES6.  These are not rules to die over, but using them frequently will give a team the ability to read and understand code better.
 
 ## Labeling Variables
 An id should always include the term `Id`
@@ -11,6 +11,17 @@ personId
 // BAD
 item
 person
+```
+
+Booleans and functions which return booleans should be prefaces with "be" conjugations.  
+```es6
+// GOOD
+isOpen = false
+isValid() // returns bool
+
+// BAD
+open = false
+valid() // returns bool
 ```
 
 Functions should always be verbs or questions
