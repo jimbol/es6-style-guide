@@ -48,3 +48,6 @@ function isOpen() {
 // BAD
 const openId = 'OPEN_ID';
 ```
+
+## Testing with Mocha
+`describe`s describe things.  `context`s describe situations.  `it`s describe expected results.
