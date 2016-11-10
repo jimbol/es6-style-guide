@@ -49,5 +49,22 @@ function isOpen() {
 const openId = 'OPEN_ID';
 ```
 
+## Functions
+Callbacks should usually be arrow functions `=>`.
+```es6
+const fooIds = foos.map((foo) => foo.id);
+```
+
+But large callbacks should be defined outside, and passed in, when possible.
+```
+const foodBars = foos.reduce(getFooBars, []);
+
+const getFooBars = (fooBars, foo) => {
+  // computation for foo bars
+  
+  fooChildren.push(fooBar);
+};
+```
+
 ## Testing with Mocha
 `describe`s describe things.  `context`s describe situations.  `it`s describe expected results.
